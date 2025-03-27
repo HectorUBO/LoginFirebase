@@ -201,11 +201,6 @@ export default function ProfileScreen() {
                                 </View>
 
                                 <View style={styles.dataSection}>
-                                    <Text style={styles.label}>LAST UPDATE:</Text>
-                                    <Text style={styles.value}>{formatDate(user?.ultimaActualizacion)}</Text>
-                                </View>
-
-                                <View style={styles.dataSection}>
                                     <Text style={styles.label}>FAVORITES:</Text>
                                     <Text style={styles.value}>
                                         {user?.favoritos?.length > 0 
@@ -413,10 +408,10 @@ const styles = StyleSheet.create({
         borderRadius: 2,
     },
     cancelButton: {
-        backgroundColor: 'rgba(255, 59, 48, 0.3)',
+        backgroundColor: 'rgba(20, 254, 23, 0.5)',
         padding: 12,
         borderWidth: 1,
-        borderColor: '#ff3b30',
+        borderColor: '#14fe17',
         flex: 1,
         borderRadius: 2,
     },

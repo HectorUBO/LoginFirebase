@@ -68,6 +68,13 @@ export default function LoginScreen() {
                         </TouchableOpacity>
                     </View>
 
+                    <TouchableOpacity
+                        style={[styles.secondaryButton, { marginTop: 10 }]}
+                        onPress={() => router.push("/")}
+                    >
+                        <Text style={styles.buttonText}>RETURN TO MAIN TERMINAL</Text>
+                    </TouchableOpacity>
+
                     <Text style={styles.footerText}>VAULT-TEC CORPORATION © 2077</Text>
                 </View>
             </View>

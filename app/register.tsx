@@ -100,16 +100,6 @@ export default function RegisterScreen() {
                         keyboardType="phone-pad"
                     />
 
-                    <Text style={styles.label}>DWELLER BIO:</Text>
-                    <TextInput
-                        style={[styles.input, styles.bioInput]}
-                        placeholder="ENTER BIO INFORMATION"
-                        placeholderTextColor="#14fe17"
-                        value={formData.biografia}
-                        onChangeText={(text) => handleChange('biografia', text)}
-                        multiline
-                    />
-
                     <View style={styles.buttonRow}>
                         <TouchableOpacity
                             style={[styles.button, styles.secondaryButton]}

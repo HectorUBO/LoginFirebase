@@ -19,7 +19,6 @@ interface UserData {
   telefono: string;
   idioma: string;
   favoritos: string[];
-  ultimaActualizacion: string;
 }
 
 interface AuthContextType {
@@ -58,8 +57,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
                         biografia: '',
                         telefono: '',
                         idioma: 'es',
-                        favoritos: [],
-                        ultimaActualizacion: new Date().toISOString()
+                        favoritos: []
                     };
                     
                     await setDoc(doc(db, "users", firebaseUser.uid), defaultUserData);
@@ -104,7 +102,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
                 telefono: userData?.telefono || '',
                 idioma: userData?.idioma || 'es',
                 favoritos: userData?.favoritos || [],
-                ultimaActualizacion: new Date().toISOString()
             };
 
             await setDoc(doc(db, "users", userCredential.user.uid), completeUserData);
